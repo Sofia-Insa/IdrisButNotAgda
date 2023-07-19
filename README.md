@@ -29,7 +29,7 @@ All of the "don't exist" things below might be wrong.
     true  ∨ b = true
     false ∨ b = b
     ```
-  - Associative, Commutative, Interaction and De Morgan's laws probably not that obvious from the definitions.
+  - Associative, Commutative, Interaction, and De Morgan's laws are probably not that obvious from the definitions.
     - `andSameNeutral`
     - `andFalseFalse`
     - `andTrueNeutral`
@@ -59,7 +59,7 @@ All of the "don't exist" things below might be wrong.
     - `isNil` (is this really required?)
     - `isCons` (is this really required?)
     - `iterateN`
-    - `iterate` (exists for `Vec`)
+    - `iterate` (exists for `Vec`, `replicate` exists for `List` but not `iterate`)
     - `unfoldr`
     - `nub`
     - `nubBy`
@@ -103,7 +103,7 @@ All of the "don't exist" things below might be wrong.
     - `transpose` (exists for `Vec`)
   - Properties
     - `appendNilRightNeutral`
-    - `appendAssociative`
+    - `appendAssociative` - (a PR here - https://github.com/agda/agda-stdlib/pull/2023)
     - `dropFusion`
 - [ ] [`Data.Vec`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Vect.idr)
     - Functions
@@ -150,7 +150,7 @@ All of the "don't exist" things below might be wrong.
   - ~`raiseToMaybe`~
 - [ ] [`Data.String`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/String.idr)
   - Equivalent functions don't exist
-    - `trim`, `ltrim`, rtrim` (written in Haskell?)
+    - `trim`, `ltrim`, `rtrim` (written in Haskell?)
     - `stringToNatOrZ` (`primCharToNat` exists)
     - `split`, `break`, `span`
     - `parseInteger`, `parsePositive`, `parseNumWithoutSign`
