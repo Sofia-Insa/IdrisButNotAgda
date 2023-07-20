@@ -101,10 +101,21 @@ All of the "don't exist" things below might be wrong.
     - `isSuffixOfBy`
     - `isInfixOf`
     - `transpose` (exists for `Vec`)
+    - `get`
+    - `dropElem`
+    - `indexElem`
+    - `elemToNat`
+    - `elemMap`
+    - `decide`
   - Properties
     - `appendNilRightNeutral`
     - `appendAssociative` - (a PR here - https://github.com/agda/agda-stdlib/pull/2023)
     - `dropFusion`
+    - `neitherHereNorThere`
+    - `isElem`
+    - `negAnyAll`
+    - `anyNegAll`
+    - `allNegAny`
 - [ ] [`Data.Vec`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Vect.idr)
     - Functions
       - `drop'`
