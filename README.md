@@ -105,7 +105,32 @@ All of the "don't exist" things below might be wrong.
     - `appendNilRightNeutral`
     - `appendAssociative` - (a PR here - https://github.com/agda/agda-stdlib/pull/2023)
     - `dropFusion`
-- [ ] [`Data.Vec`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Vect.idr)
+- [ ] [`Data.List.Elem`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Elem.idr)
+  - Functions
+    - `dropElem`
+    - `get`
+    - `elemToNat`
+    - `indexElem`
+    - `elemMap`
+  - Properties (or proofs?)
+    - `neitherHereNorThere`
+    - `isElem`
+- [ ] [`Data.List.HasLength`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/HasLength.idr)
+  - Properties (or proofs?)
+    - `hasLength`
+    - `hasLengthUnique`
+- [ ] [`Data.List.Quantifiers`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Quantifiers.idr)
+  - Properties (or proofs?)
+    - `negAnyAll`
+    - `anyNegAll`
+    - `allNegAny`
+    - `decide`
+    - `pushIn`
+    - `pullOut`
+    - `pushInOutInverse`
+    - `pushOutInInverse`
+    - `indexAll`
+- [ ] [`Data.Vect`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Vect.idr)
     - Functions
       - `drop'`
       - `allFins` 
@@ -145,31 +170,26 @@ All of the "don't exist" things below might be wrong.
     - Properties
       - `replaceAtSameIndex` (something like this exists for `updateAt`)
       - `replaceAtDiffIndexPreserves` (something like this exists for `updateAt`)
-- [ ] [`Data.List.Elem`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Elem.idr)
+- [ ] [`Data.Vect.Elem`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Vect/Elem.idr)
   - Functions
     - `dropElem`
     - `get`
-    - `elemToNat`
+    - `elemToFin`
     - `indexElem`
-    - `elemMap`
+    - `mapElem`
+    - `replaceByElem`
+    - `replaceElem`
   - Properties (or proofs?)
     - `neitherHereNorThere`
     - `isElem`
-- [ ] [`Data.List.HasLength`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/HasLength.idr)
-  - Properties (or proofs?)
-    - `hasLength`
-    - `hasLengthUnique`
-- [ ] [`Data.List.Quantifiers`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Quantifiers.idr)
+- [ ] [`Data.Vect.Quantifiers`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Vect/Quantifiers.idr)
   - Properties (or proofs?)
     - `negAnyAll`
-    - `anyNegAll`
-    - `allNegAny`
-    - `decide`
-    - `pushIn`
-    - `pullOut`
-    - `pushInOutInverse`
-    - `pushOutInInverse`
-    - `indexAll`
+    - `notAllHere`
+    - `notAllThere`
+    - `mapProperty`
+    - `all`
+    - `zipPropertyWith`
 - [x] [`Data.Maybe`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Maybe.idr)
   - ~`isItJust`~
   - ~`raiseToMaybe`~
