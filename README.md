@@ -101,21 +101,10 @@ All of the "don't exist" things below might be wrong.
     - `isSuffixOfBy`
     - `isInfixOf`
     - `transpose` (exists for `Vec`)
-    - `get`
-    - `dropElem`
-    - `indexElem`
-    - `elemToNat`
-    - `elemMap`
-    - `decide`
   - Properties
     - `appendNilRightNeutral`
     - `appendAssociative` - (a PR here - https://github.com/agda/agda-stdlib/pull/2023)
     - `dropFusion`
-    - `neitherHereNorThere`
-    - `isElem`
-    - `negAnyAll`
-    - `anyNegAll`
-    - `allNegAny`
 - [ ] [`Data.Vec`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Vect.idr)
     - Functions
       - `drop'`
@@ -156,6 +145,31 @@ All of the "don't exist" things below might be wrong.
     - Properties
       - `replaceAtSameIndex` (something like this exists for `updateAt`)
       - `replaceAtDiffIndexPreserves` (something like this exists for `updateAt`)
+- [ ] [`Data.List.Elem`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Elem.idr)
+  - Functions
+    - `dropElem`
+    - `get`
+    - `elemToNat`
+    - `indexElem`
+    - `elemMap`
+  - Properties (or proofs?)
+    - `neitherHereNorThere`
+    - `isElem`
+- [ ] [`Data.List.HasLength`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/HasLength.idr)
+  - Properties (or proofs?)
+    - `hasLength`
+    - `hasLengthUnique`
+- [ ] [`Data.List.Quantifiers`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Quantifiers.idr)
+  - Properties (or proofs?)
+    - `negAnyAll`
+    - `anyNegAll`
+    - `allNegAny`
+    - `decide`
+    - `pushIn`
+    - `pullOut`
+    - `pushInOutInverse`
+    - `pushOutInInverse`
+    - `indexAll`
 - [x] [`Data.Maybe`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Maybe.idr)
   - ~`isItJust`~
   - ~`raiseToMaybe`~
