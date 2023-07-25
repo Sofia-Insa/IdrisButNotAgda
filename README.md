@@ -130,7 +130,7 @@ All of the "don't exist" things below might be wrong.
     - `pushInOutInverse`
     - `pushOutInInverse`
     - `indexAll`
-- [ ] [`Data.List.Views`]([https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Views.idr]
+- [ ] [`Data.List.Views`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Views.idr)
   - Properties
     - `lengthSuc`
     - `lengthLT`
