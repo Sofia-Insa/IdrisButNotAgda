@@ -209,3 +209,22 @@ All of the "don't exist" things below might be wrong.
     - `parseInteger`, `parsePositive`, `parseNumWithoutSign`
     - `isInfixOf`, `isSuffixOf`, `isPrefixOf`
     - `strSubstr`
+- [ ] [`Data.Nat.Order`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Nat/Order.idr)
+  - Properties
+    - `zeroNeverGreater`
+    - `zeroAlwaysSmaller`
+      - I think they are already covered under `compare`
+        ```agda
+        compare : ∀ m n → Ordering m n
+        compare zero    zero    = equal   zero
+        compare (suc m) zero    = greater zero m
+        compare zero    (suc n) = less    zero n
+        compare (suc m) (suc n) with compare m n
+        ... | less    m k = less (suc m) k
+        ... | equal   m   = equal (suc m)
+        ... | greater n k = greater (suc n) k
+        ```
+    - `decideLTE`
+    - `decideLTBounded`
+    - `lte`
+    - `shift`
