@@ -10,14 +10,16 @@ All of the "don't exist" things below might be wrong.
       false xor b = b
       ```
   - Available in idris
-    - `xorSameFalse`
-    - `xorFalseNeutral`
-    - `xorTrueNot`
-    - `notXor`
-    - `notXorCancel`
-    - `xorAssociative`
-    - `xorCommutative`
-    - `xorNotTrue`
+    - `xorSameFalse` :heavy_check_mark:
+    - `xorFalseNeutral` :heavy_check_mark:
+    - `xorTrueNot` :heavy_check_mark:
+    - `notXor` :heavy_check_mark:
+    - `notXorCancel` :heavy_check_mark:
+    - `xorAssociative` :heavy_check_mark:
+    - `xorCommutative` :heavy_check_mark:
+    - `xorNotTrue` :heavy_check_mark:
+   
+    [JC : The above seems to indicate that Bool w/ xor forms at least a commutative monoid, possibly 'more']
 - [ ] [`Data.Bool`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Bool.idr)
   - these properties are not covered but maybe they are too obvious and can be seen through the definitions -
     ```agda
@@ -29,7 +31,7 @@ All of the "don't exist" things below might be wrong.
     true  ∨ b = true
     false ∨ b = b
     ```
-  - Associative, Commutative, Interaction, and De Morgan's laws are probably not that obvious from the definitions.
+  - Associative, Commutative, Interaction, and De Morgan's laws are probably not that obvious from the definitions. [JC : some of these are most likely in there already in `Data.Bool.Properties` ; please do another pass]
     - `andSameNeutral`
     - `andFalseFalse`
     - `andTrueNeutral`
@@ -54,10 +56,10 @@ All of the "don't exist" things below might be wrong.
     - ~`zipWith3`~
     - ~`zip3`~
     - ~their `unzip` counterparts~
-- [ ] [`Data.List`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List.idr)
+- [ ] [`Data.List`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List.idr) [JC: skipping `Data.List` on first pass]
   - Functions
-    - `isNil` (is this really required?)
-    - `isCons` (is this really required?)
+    - `isNil` (is this really required?) [JC: no]
+    - `isCons` (is this really required?) [JC: no]
     - `iterateN`
     - `iterate` (exists for `Vec`, `replicate` exists for `List` but not `iterate`)
     - `unfoldr`
@@ -107,29 +109,29 @@ All of the "don't exist" things below might be wrong.
     - `dropFusion`
 - [ ] [`Data.List.Elem`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Elem.idr)
   - Functions
-    - `dropElem`
-    - `get`
-    - `elemToNat`
-    - `indexElem`
+    - `dropElem` :heavy_check_mark:
+    - `get` :heavy_check_mark:
+    - `elemToNat` [JC `Data.List.Relation.Unary.Any.index` ? ]
+    - `indexElem` [JC : I think there is a `find` somewhere like this ]
     - `elemMap`
   - Properties (or proofs?)
     - `neitherHereNorThere`
     - `isElem`
 - [ ] [`Data.List.HasLength`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/HasLength.idr)
   - Properties (or proofs?)
-    - `hasLength`
-    - `hasLengthUnique`
+    - `hasLength` :x:
+    - `hasLengthUnique` :x:
 - [ ] [`Data.List.Quantifiers`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Quantifiers.idr)
   - Properties (or proofs?)
-    - `negAnyAll`
-    - `anyNegAll`
-    - `allNegAny`
-    - `decide`
-    - `pushIn`
-    - `pullOut`
-    - `pushInOutInverse`
-    - `pushOutInInverse`
-    - `indexAll`
+    - `negAnyAll` :x:
+    - `anyNegAll` :x:
+    - `allNegAny` :x:
+    - `decide` :heavy_check_mark:
+    - `pushIn` :heavy_check_mark:
+    - `pullOut` :heavy_check_mark:
+    - `pushInOutInverse` :heavy_check_mark:
+    - `pushOutInInverse` :heavy_check_mark:
+    - `indexAll` :heavy_check_mark:
 - [ ] [`Data.List.Views`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Views.idr)
   - Properties
     - `lengthSuc`
