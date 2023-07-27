@@ -228,3 +228,22 @@ All of the "don't exist" things below might be wrong.
     - `decideLTBounded`
     - `lte`
     - `shift`
+- [ ] [`Data.Nat`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Nat.idr)
+  - Functions
+    - `hyper`
+  - Properties
+    - `compareNatDiag`
+    - `compareNatFlip`
+    - `NotBothZero`
+    - `LTE` (all the `LTE` stuff)
+    - `GTE` (all the `GTE` stuff)
+    - `plusZeroLeftNeutral`
+    - `plusZeroRightNeutral`
+    - `plusConstantRight`
+    - `plusConstantLeft`
+    - `plusOneSucc`
+    - `plusLeftLeftRightZero`
+    - `multLeftSuccPlus` (covered under distributive properties?)
+    - `multRightSuccPlus` (covered under distributive properties?)
+    - `multDistributesOverPlusLeft` (covered under distributive properties?)
+    - `multDistributesOverPlusRight` (covered under distributive properties?)
