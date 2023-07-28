@@ -1,6 +1,6 @@
 All of the "don't exist" things below might be wrong.
 
-- [ ] [`Data.Bool.Xor`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Bool/Xor.idr)
+- [X] [`Data.Bool.Xor`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Bool/Xor.idr)
   - Available in agda (Bool.Properties)
     - `xor-is-ok : ∀ x y → x xor y ≡ (x ∨ y) ∧ not (x ∧ y)`
     - The definition of `xor` covers some idris properties (`xorFalseNeutral`, `xorTrueNot`) listed below
