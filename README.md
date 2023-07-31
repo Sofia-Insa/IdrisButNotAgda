@@ -32,25 +32,10 @@ All of the "don't exist" things below might be wrong.
     false ∨ b = b
     ```
   - Associative, Commutative, Interaction, and De Morgan's laws are probably not that obvious from the definitions. [JC : some of these are most likely in there already in `Data.Bool.Properties` ; please do another pass]
-    - `andSameNeutral`
-    - `andFalseFalse`
-    - `andTrueNeutral`
-    - `andAssociative`
-    - `andCommutative`
-    - `andNotFalse`
-    - `orSameNeutral`
-    - `orFalseNeutral`
-    - `orTrueTrue`
-    - `orAssociative`
-    - `orCommutative`
-    - `orNotTrue`
-    - `orSameAndRightNeutral`
-    - `andDistribOrR`
-    - `orDistribAndR`
-    - `notAndIsOr`
-    - `notOrIsAnd`
-    - `notTrueIsFalse`
-    - `notFalseIsTrue`
+    - `notAndIsOr` (similar to `not-xor-cancel`)
+    - `notOrIsAnd` (similar to `not-xor-cancel`)
+    - `notTrueIsFalse` (is this really useful?)
+    - `notFalseIsTrue` (is this really useful?)
 - [X] [`Data.Zippable`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Zippable.idr)
   - `zipN` and the functions below do not exist in agda but they are not very important
     - ~`zipWith3`~
