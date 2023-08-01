@@ -43,17 +43,19 @@ All of the "don't exist" things below might be wrong.
     - ~their `unzip` counterparts~
 - [ ] [`Data.List`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List.idr) [JC: skipping `Data.List` on first pass]
   - Functions
-    - `isNil` (is this really required?) [JC: no]
-    - `isCons` (is this really required?) [JC: no]
+    - `isNil` (is this really required?) [JC: no] ❎
+    - `isCons` (is this really required?) [JC: no] ❎
     - `iterateN`
     - `iterate` (exists for `Vec`, `replicate` exists for `List` but not `iterate`)
-    - `unfoldr`
-    - `nub`
-    - `nubBy`
-    - `find` (similar to `filter` in `agda`, but `filter` returns a `List`)
-    - `findIndex`
-    - `findIndices`
-    - `lookupBy` (`lookup` exists in `agda`)
+    - `unfoldr` (`unfold` exists)
+    - `nub` - should be defined in terms of `deduplicate`, if defined ❎
+    - `nubBy` - should be defined in terms of `deduplicate`, if defined ❎
+    - `find` ✔️
+        - `find` exists in `Data.List.Membership.Setoid`, but it does not return `Maybe`.
+        - similarly `lookup` and `index` in `Data.List.Relation.Unary.Any` + `Data.List.Relation.Unary.First`
+    - `findIndex` ✔️
+    - `findIndices` ✔️
+    - `lookupBy` (`lookup` exists in `agda`) 
     - `insertAt`
     - `deleteAt`
     - `deleteBy`
