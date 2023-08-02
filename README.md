@@ -51,27 +51,31 @@ All of the "don't exist" things below might be wrong.
     - `nub` - should be defined in terms of `deduplicate`, if defined ❎
     - `nubBy` - should be defined in terms of `deduplicate`, if defined ❎
     - `find` ✔️
-        - `find` exists in `Data.List.Membership.Setoid`, but it does not return `Maybe`.
-        - similarly `lookup` and `index` in `Data.List.Relation.Unary.Any` + `Data.List.Relation.Unary.First`
+      - `find` exists in `Data.List.Membership.Setoid`, but it does not return `Maybe`.
+      - similarly `lookup` and `index` in `Data.List.Relation.Unary.Any` + `Data.List.Relation.Unary.First`
     - `findIndex` ✔️
     - `findIndices` ✔️
-    - `lookupBy` (`lookup` exists in `agda`) 
-    - `insertAt`
-    - `deleteAt`
-    - `deleteBy`
-    - `delete`
-    - `deleteFirstsBy`
-    - `replaceAt`
-    - `replaceWhen`
-    - `unionBy` (probably there with a different name / location)
-    - `union` (probably there with a different name / location)
-    - `span`
-    - `spanBy`
-    - `intersectAllBy` (probably there with a different name / location)
-    - `intersectAll` (probably there with a different name / location)
-    - `intersectBy` (probably there with a different name / location)
-    - `singleton` (is this really required?)
-    - `splitOn`
+    - `lookup` ✔️
+      - (`lookup` exists in `agda` but is different)
+      - should be defined in `Data.List.Association`
+    - `lookupBy` ✔️
+      - should be defined in `Data.List.Association`
+    - `insertAt` ✔️
+    - `deleteAt` ✔️
+    - `deleteBy` (almost `filterᵇ`) ❎
+    - `delete` (almost `filterᵇ`) ❎
+    - `deleteFirstsBy` ✔️
+    - `replaceAt` (exists as `_[_]∷=_`) ❎
+    - `replaceWhen` ❎
+    - `unionBy` ❎
+    - `union` ❎
+    - `span` (`spanᵇ` exists) ❎
+    - `spanBy` ❎
+    - `intersectAllBy` ❎
+    - `intersectAll` ❎
+    - `intersectBy` ❎
+    - `singleton` (`[_]`)
+    - `splitOn` ❎
     - `replaceAt`
     - `replaceOn`
     - `replaceWhen`
@@ -91,9 +95,9 @@ All of the "don't exist" things below might be wrong.
     - `isInfixOf`
     - `transpose` (exists for `Vec`)
   - Properties
-    - `appendNilRightNeutral`
-    - `appendAssociative` - (a PR here - https://github.com/agda/agda-stdlib/pull/2023)
-    - `dropFusion`
+    - `appendNilRightNeutral` (`++-identity` properties)
+    - `appendAssociative` - (a PR here - https://github.com/agda/agda-stdlib/pull/2023) (`++-assoc`)
+    - `dropFusion` ✔️
 - [ ] [`Data.List.Elem`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/List/Elem.idr)
   - Functions
     - `dropElem` :heavy_check_mark:
