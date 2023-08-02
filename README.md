@@ -20,7 +20,7 @@ All of the "don't exist" things below might be wrong.
     - `xorNotTrue` :heavy_check_mark:
    
     [JC : The above seems to indicate that Bool w/ xor forms at least a commutative monoid, possibly 'more']
-- [ ] [`Data.Bool`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Bool.idr)
+- [X] [`Data.Bool`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Bool.idr)
   - these properties are not covered but maybe they are too obvious and can be seen through the definitions -
     ```agda
     _∧_ : Bool → Bool → Bool
@@ -32,10 +32,6 @@ All of the "don't exist" things below might be wrong.
     false ∨ b = b
     ```
   - Associative, Commutative, Interaction, and De Morgan's laws are probably not that obvious from the definitions. [JC : some of these are most likely in there already in `Data.Bool.Properties` ; please do another pass]
-    - `notAndIsOr` (similar to `not-xor-cancel`)
-    - `notOrIsAnd` (similar to `not-xor-cancel`)
-    - `notTrueIsFalse` (is this really useful?)
-    - `notFalseIsTrue` (is this really useful?)
 - [X] [`Data.Zippable`](https://github.com/idris-lang/Idris2/blob/main/libs/base/Data/Zippable.idr)
   - `zipN` and the functions below do not exist in agda but they are not very important
     - ~`zipWith3`~
