@@ -60,7 +60,7 @@
 
 - [ ] src/Reflection/AST/AlphaEquality.agda:86,3-306,20 --- \_=α=-AbsTerm\_, \_=α=-ArgPattern\_, \_=α=-ArgTerm\_, \_=α=-ArgsPattern\_, \_=α=-ArgsTerm\_, \_=α=-Clause\_, \_=α=-Clauses\_, \_=α=-Pattern\_, \_=α=-Sort\_, \_=α=-Telescope\_, \_=α=-Term\_
 
-- [ ] src/Tactic/RingSolver/Core/Expression.agda:27,3-5 --- ⊝\_
+- [ ] src/Tactic/RingSolver/Core/Expression.agda:27,3-5 --- ⊝\_  - `infix 8`
 
 - [ ] src/Tactic/RingSolver/Core/Polynomial/Homomorphism/Lemmas.agda:104,1-7 --- \_⟦∷⟧?\_Lemmas-14607523571404377151
 
