@@ -30,7 +30,7 @@
 
 - [ ] src/Effect/Monad/Predicate.agda:44,3-9 --- \_?>=′\_ - `infixl 1`
 
-- [ ] src/Relation/Unary/PredicateTransformer.agda:37,1-56,3 --- \_⍮\_, ∼\_
+- [ ] src/Relation/Unary/PredicateTransformer.agda:37,1-56,3 --- \_⍮\_ , ∼\_ - `infixr 9`
 
 - [ ] src/Data/Container/Indexed/Combinator.agda:63,1-4 --- \_^⊥
 
