@@ -112,7 +112,13 @@
 
 - [ ] src/Algebra/Solver/Ring/AlmostCommutativeRing.agda:79,8-33 --- \_-Raw-AlmostCommutative⟶\_
 
-- [ ] src/Relation/Unary/Properties.agda:205,1-226,4 --- \_~?, \_×?\_, \_∩?\_, \_∪?\_, \_⊎?\_, \_⊙?\_
+- [ ] src/Relation/Unary/Properties.agda:205,1-226,4 ---
+  - \_~?  `infix 10`
+  - \_×?\_ `infix 2`
+  - \_∩?\_ `infix 7`
+  - \?\_ `infix 6`
+  - \_⊎?\_ `infix 1`
+  - \_⊙?\_ `infix 2`
 
 - [ ] src/Function/Construct/Composition.agda:240,1-282,6 --- \_∘-↔\_, \_∘-↠\_, \_∘-↣\_, \_∘-↩\_, \_∘-↪\_, \_∘-⇔\_, \_∘-⟶\_, \_∘-⤖\_ - `infixr 9`
 
