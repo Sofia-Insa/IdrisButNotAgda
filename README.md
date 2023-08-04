@@ -54,7 +54,7 @@
 
 - [ ] src/Foreign/Haskell/Pair.agda:24,15-18 --- \_,\_ - `infixr 4` - document this in `README.Design.Fixity`
 
-- [ ] src/Tactic/RingSolver.agda:144,3-7 --- \_`⊜\_
+- [ ] src/Tactic/RingSolver.agda:144,3-7 --- \_`⊜\_ - `infixl 6`
 
 - [ ] src/Tactic/RingSolver.agda:78,15-40 --- add⇒\_mul⇒\_pow⇒\_neg⇒\_sub⇒\_
 
