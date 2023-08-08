@@ -100,7 +100,7 @@
 
 - [ ] src/Relation/Nullary/Construct/Add/Extrema.agda:18,1-3 --- \_±
 
-- [ ] src/Function/Related/TypeIsomorphisms.agda:265,1-11 --- \_→-cong-⇔\_
+- [ ] src/Function/Related/TypeIsomorphisms.agda:265,1-11 --- \_→-cong-⇔\_ - `infix 3` 
 
 - [ ] src/Function/Related.agda:268,1-4 --- \_op
 
