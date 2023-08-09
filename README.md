@@ -90,7 +90,7 @@
 
 - [ ] src/Algebra/Module/Definitions/Left.agda:36,1-40,21 --- \_DistributesOverʳ\_⟶\_, \_DistributesOverˡ\_
 
-- [ ] src/Data/Container/Relation/Binary/Pointwise.agda:26,17-20 --- \_,\_
+- [ ] src/Data/Container/Relation/Binary/Pointwise.agda:26,17-20 --- \_,\_ - `infixr 4`
 
 - [ ] src/Data/Tree/AVL/Value.agda:31,8-32,18 --- \_,\_, K&\_
 
