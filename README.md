@@ -42,7 +42,7 @@
 
 - [ ] src/Effect/Monad/Partiality.agda:39,6-8 --- \_⊥
 
-- [ ] src/IO/Base.agda:62,3-74,7 --- \_<$\_, \_<<\_
+- [ ] src/IO/Base.agda:62,3-74,7 --- \_<$\_ - `infixl 1`, \_<<\_ - `infixr 1`
 
 - [ ] src/Relation/Binary/HeterogeneousEquality.agda:271,8-20 --- Reveal\_·\_is\_
 
