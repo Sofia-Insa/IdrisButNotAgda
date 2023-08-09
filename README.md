@@ -76,9 +76,9 @@
 
 - [ ] src/Tactic/RingSolver/Core/AlmostCommutativeRing.agda:88,8-33 --- \_-Raw-AlmostCommutative⟶\_
 
-- [ ] src/Text/Regex/Derivative/Brzozowski.agda:110,1-114,5 --- \_∈?\_, \_∉?\_
+- [ ] src/Text/Regex/Derivative/Brzozowski.agda:110,1-114,5 --- \_∈?\_, \_∉?\_ - `infix 4`
 
-- [ ] src/Text/Regex/Properties.agda:44,1-72,8 --- \_∈?[\_], \_∈?[^\_], \_∈?ε, \_∈ᴿ?\_, \_∉ᴿ?\_, []∈?\_
+- [ ] src/Text/Regex/Properties.agda:44,1-72,8 --- \_∈?[\_], \_∈?[^\_], \_∈?ε, \_∈ᴿ?\_, \_∉ᴿ?\_, []∈?\_ - `infix 4`
 
 - [ ] src/Reflection/AnnotatedAST.agda:84,3-6 --- \_,\_
 
