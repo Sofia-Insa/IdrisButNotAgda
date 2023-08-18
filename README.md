@@ -32,15 +32,15 @@
 
 - [ ] src/Relation/Unary/PredicateTransformer.agda:37,1-56,3 --- \_⍮\_, ∼\_
 
-- [ ] src/Data/Container/Indexed/Combinator.agda:63,1-4 --- \_^⊥
+- [ ] src/Data/Container/Indexed/Combinator.agda:63,1-4 --- \_^⊥ -
 
-- [ ] src/Effect/Monad/Partiality.agda:590,8-11 --- \_⊥P
+- [ ] src/Effect/Monad/Partiality.agda:590,8-11 --- \_⊥P -
 
 - [ ] src/Effect/Monad/Partiality.agda:571,3-15 --- \_≡->>=-cong\_ - `infixl 1`
 
 - [ ] src/Effect/Monad/Partiality.agda:510,3-13 --- \_>>=-cong\_ - `infixl 1`
 
-- [ ] src/Effect/Monad/Partiality.agda:39,6-8 --- \_⊥
+- [ ] src/Effect/Monad/Partiality.agda:39,6-8 --- \_⊥ -
 
 - [ ] src/IO/Base.agda:62,3-74,7 --- \_<$\_, \_<<\_
 
@@ -60,7 +60,7 @@
 
 - [ ] src/Reflection/AST/AlphaEquality.agda:86,3-306,20 --- \_=α=-AbsTerm\_, \_=α=-ArgPattern\_, \_=α=-ArgTerm\_, \_=α=-ArgsPattern\_, \_=α=-ArgsTerm\_, \_=α=-Clause\_, \_=α=-Clauses\_, \_=α=-Pattern\_, \_=α=-Sort\_, \_=α=-Telescope\_, \_=α=-Term\_
 
-- [ ] src/Tactic/RingSolver/Core/Expression.agda:27,3-5 --- ⊝\_
+- [ ] src/Tactic/RingSolver/Core/Expression.agda:27,3-5 --- ⊝\_  - `infix 8`
 
 - [ ] src/Tactic/RingSolver/Core/Polynomial/Homomorphism/Lemmas.agda:104,1-7 --- \_⟦∷⟧?\_Lemmas-14607523571404377151
 
@@ -76,9 +76,9 @@
 
 - [ ] src/Tactic/RingSolver/Core/AlmostCommutativeRing.agda:88,8-33 --- \_-Raw-AlmostCommutative⟶\_
 
-- [ ] src/Text/Regex/Derivative/Brzozowski.agda:110,1-114,5 --- \_∈?\_, \_∉?\_
+- [ ] src/Text/Regex/Derivative/Brzozowski.agda:110,1-114,5 --- \_∈?\_, \_∉?\_ - `infix 4`
 
-- [ ] src/Text/Regex/Properties.agda:44,1-72,8 --- \_∈?[\_], \_∈?[^\_], \_∈?ε, \_∈ᴿ?\_, \_∉ᴿ?\_, []∈?\_
+- [ ] src/Text/Regex/Properties.agda:44,1-72,8 --- \_∈?[\_], \_∈?[^\_], \_∈?ε, \_∈ᴿ?\_, \_∉ᴿ?\_, []∈?\_ - `infix 4`
 
 - [ ] src/Reflection/AnnotatedAST.agda:84,3-6 --- \_,\_
 
@@ -90,17 +90,17 @@
 
 - [ ] src/Algebra/Module/Definitions/Left.agda:36,1-40,21 --- \_DistributesOverʳ\_⟶\_, \_DistributesOverˡ\_
 
-- [ ] src/Data/Container/Relation/Binary/Pointwise.agda:26,17-20 --- \_,\_
+- [ ] src/Data/Container/Relation/Binary/Pointwise.agda:26,17-20 --- \_,\_ - `infixr 4`
 
 - [ ] src/Data/Tree/AVL/Value.agda:31,8-32,18 --- \_,\_, K&\_
 
-- [ ] src/Relation/Binary/Construct/Add/Extrema/NonStrict.agda:44,1-49,5 --- \_≤⊤±, ⊥±≤\_
+- [ ] src/Relation/Binary/Construct/Add/Extrema/NonStrict.agda:44,1-49,5 --- \_≤⊤±, ⊥±≤\_ -
 
-- [ ] src/Relation/Binary/Construct/Add/Infimum/NonStrict.agda:31,3-7 --- ⊥₋≤\_
+- [ ] src/Relation/Binary/Construct/Add/Infimum/NonStrict.agda:31,3-7 --- ⊥₋≤\_ -
 
 - [ ] src/Relation/Nullary/Construct/Add/Extrema.agda:18,1-3 --- \_±
 
-- [ ] src/Function/Related/TypeIsomorphisms.agda:265,1-11 --- \_→-cong-⇔\_
+- [ ] src/Function/Related/TypeIsomorphisms.agda:265,1-11 --- \_→-cong-⇔\_ - `infix 3` 
 
 - [ ] src/Function/Related.agda:268,1-4 --- \_op
 
@@ -112,7 +112,13 @@
 
 - [ ] src/Algebra/Solver/Ring/AlmostCommutativeRing.agda:79,8-33 --- \_-Raw-AlmostCommutative⟶\_
 
-- [ ] src/Relation/Unary/Properties.agda:205,1-226,4 --- \_~?, \_×?\_, \_∩?\_, \_∪?\_, \_⊎?\_, \_⊙?\_
+- [ ] src/Relation/Unary/Properties.agda:205,1-226,4 ---
+  - \_~?  `infix 10`
+  - \_×?\_ `infix 2`
+  - \_∩?\_ `infix 7`
+  - \?\_ `infix 6`
+  - \_⊎?\_ `infix 1`
+  - \_⊙?\_ `infix 2`
 
 - [ ] src/Function/Construct/Composition.agda:240,1-282,6 --- \_∘-↔\_, \_∘-↠\_, \_∘-↣\_, \_∘-↩\_, \_∘-↪\_, \_∘-⇔\_, \_∘-⟶\_, \_∘-⤖\_ - `infixr 9`
 
