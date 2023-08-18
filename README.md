@@ -32,15 +32,15 @@
 
 - [ ] src/Relation/Unary/PredicateTransformer.agda:37,1-56,3 --- \_⍮\_, ∼\_
 
-- [ ] src/Data/Container/Indexed/Combinator.agda:63,1-4 --- \_^⊥
+- [ ] src/Data/Container/Indexed/Combinator.agda:63,1-4 --- \_^⊥ -
 
-- [ ] src/Effect/Monad/Partiality.agda:590,8-11 --- \_⊥P
+- [ ] src/Effect/Monad/Partiality.agda:590,8-11 --- \_⊥P -
 
 - [ ] src/Effect/Monad/Partiality.agda:571,3-15 --- \_≡->>=-cong\_ - `infixl 1`
 
 - [ ] src/Effect/Monad/Partiality.agda:510,3-13 --- \_>>=-cong\_ - `infixl 1`
 
-- [ ] src/Effect/Monad/Partiality.agda:39,6-8 --- \_⊥
+- [ ] src/Effect/Monad/Partiality.agda:39,6-8 --- \_⊥ -
 
 - [ ] src/IO/Base.agda:62,3-74,7 --- \_<$\_, \_<<\_
 
@@ -94,9 +94,9 @@
 
 - [ ] src/Data/Tree/AVL/Value.agda:31,8-32,18 --- \_,\_, K&\_
 
-- [ ] src/Relation/Binary/Construct/Add/Extrema/NonStrict.agda:44,1-49,5 --- \_≤⊤±, ⊥±≤\_
+- [ ] src/Relation/Binary/Construct/Add/Extrema/NonStrict.agda:44,1-49,5 --- \_≤⊤±, ⊥±≤\_ -
 
-- [ ] src/Relation/Binary/Construct/Add/Infimum/NonStrict.agda:31,3-7 --- ⊥₋≤\_
+- [ ] src/Relation/Binary/Construct/Add/Infimum/NonStrict.agda:31,3-7 --- ⊥₋≤\_ -
 
 - [ ] src/Relation/Nullary/Construct/Add/Extrema.agda:18,1-3 --- \_±
 
